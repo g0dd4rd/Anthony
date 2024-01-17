@@ -6,3 +6,6 @@ if os.uname()[0] == "Darwin":
 if os.uname()[0] == "Linux":
   print("We are on Linux")
 
+if os.uname[0] == "Windows":
+  print("We are on Windows")
+
