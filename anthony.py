@@ -1,11 +1,13 @@
 import os
 
-if os.uname()[0] == "Darwin":
+operating_system = os.uname()[0]
+if operating_system == "Darwin":
   print("We are on Mac")
+  os.system("osascript " + os.path.join(os.getcwd(), "toggle_voice_control.scpt"))
 
-if os.uname()[0] == "Linux":
+if operating_system == "Linux":
   print("We are on Linux")
 
-if os.uname[0] == "Windows":
+if operating_system == "Windows":
   print("We are on Windows")
 
