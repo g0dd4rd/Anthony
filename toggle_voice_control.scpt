@@ -7,12 +7,12 @@ tell application "System Preferences"
     set systemPreferencesIsAlreadyRunning to false
   end if
 
-  reveal anchor "Dictation" of pane id "com.apple.preference.universalaccess"
+  #reveal anchor "Dictation" of pane id "com.apple.preference.universalaccess"
 
   delay 0.5
 
   tell application "System Events"
-    tell process "System Preferences"
+    tell process "System Settings"
       click checkbox "Enable Voice Control" of group 1 of window "Accessibility"
     end tell
   end tell
